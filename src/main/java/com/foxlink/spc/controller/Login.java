@@ -55,4 +55,9 @@ public class Login {
 		return "403";
 	}
 	
+	@RequestMapping(value="/index",method=RequestMethod.GET)
+	public String ShowIndesx(){
+		return "index";
+	}
+	
 }

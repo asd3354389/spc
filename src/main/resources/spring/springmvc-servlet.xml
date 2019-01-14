@@ -22,6 +22,8 @@
 	
 	<bean id="resourceVersion" class="com.foxlink.spc.util.ResourcePathVersion" init-method="init"/>  
 	
+	
+	
     <!-- don't handle the static resource -->
     <mvc:default-servlet-handler />  
 	<mvc:resources mapping="/resources/**" location="/resources/" /><!--所有的页面引用到/resources/**的资源都从/resources/里面进行查找 -->
@@ -32,11 +34,14 @@
 		<property name="suffix" value=".jsp"></property>
 	</bean>
       
-      <mvc:interceptors>
+   <mvc:interceptors>
       	<mvc:interceptor>
       		<mvc:mapping path="/**" />
+      		<mvc:mapping path="/" />
       		<mvc:exclude-mapping path="/Login"/>
+      		<mvc:exclude-mapping path="/index"/> 
+      		<mvc:exclude-mapping path="/resources/**"/>  
       		<bean class="com.foxlink.spc.util.CheckLoginUtil"/>
       	</mvc:interceptor>
-      </mvc:interceptors>
+      </mvc:interceptors> 
 </beans>  

@@ -47,6 +47,11 @@ public class testController {
 		return "登陆成功";
 	}
 	
+	@RequestMapping(value="/ShowLinkManage",method=RequestMethod.GET)
+	public String ShowAllAccountPage(){
+		return "LinkManage";
+	}
+	
 	@RequestMapping(value="/testdb",method=RequestMethod.POST,produces="application/json;charset=utf-8")
 	@ResponseBody
 	public String testdb(HttpSession session,@RequestParam("id")String id){

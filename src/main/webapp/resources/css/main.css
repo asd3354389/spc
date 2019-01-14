@@ -1,0 +1,92 @@
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		html,body{
+			width: 100%;
+			height: 100%;
+		}
+		body{
+			/*background:url('img/loginb.png');*/
+			background: linear-gradient(#FFEDD2 , white);
+		}
+		.container{
+			margin: 0 auto;
+			width: 60%;
+			height: 100%;
+			text-align: center;
+		}
+		.container-head{
+			height: 25%;
+		}
+		.container-content{
+			height: 75%;
+		}
+		.container-footer{
+			height: 10%;
+		}
+		.logo-style{
+			width: 100%;
+			height:50%;
+			background: url('../img/logo.gif') no-repeat center;
+			
+		}
+		h1,h2{
+			font-size: 30px;
+			font-weight: bold;
+		}
+		.head-first{
+			font-size: 40px;
+			font-weight: bold;
+			color:#c13a3a;
+			margin-top:10px;
+		}
+		.head-second{
+			color:#7d5590;
+			/*margin-top:10px;*/
+		}
+		.container-content{
+			height:650px;
+			padding: 30px 0 0 0 ;
+		}
+		.tab{
+			padding: 30px 50px;
+		}
+		.content-tab{
+			width:500px;
+			margin: 0 auto;
+			background-color: #fff;
+			border-radius: 5px;
+			/*background: linear-gradient(#FFEDD2 , white);*/
+		}
+		.nav>li{
+			width: 50%;
+		}
+		.nav>li>a[aria-controls]{
+			color:#768399;
+			font-weight: bold;
+		}
+		.nav-tabs>li.active>a, 
+		.content-tab .nav>li.active>a:hover,
+		.content-tab .nav>li.active>a:focus{
+			border:none;
+		}
+		.content-tab .nav>li>a:hover,
+		.content-tab .nav>li>a:foucs{
+			border:none;
+		}
+
+		.nav>li>a{
+			margin: 0;
+/*			background-color: black;*/
+			border:none;
+			background-color: #f3f5f6;
+		}
+		/*.btn-default{
+			background-color:#75b9e6;
+			border:none;
+			width:100px; 
+		}*/
+		.container-footer{
+			height: 75px;
+		}
