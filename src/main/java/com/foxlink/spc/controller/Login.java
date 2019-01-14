@@ -23,7 +23,7 @@ public class Login {
 		SecurityContextImpl securityContext = (SecurityContextImpl) session.getAttribute("SPRING_SECURITY_CONTEXT");
 		String username =  ((UserDetails)securityContext.getAuthentication().getPrincipal()).getUsername();
 		Map<String, String> m = new HashMap<>();
-		m.put("message", username+"登陆成功");
+		m.put("message", username+"登錄成功");
 		
 		ModelAndView mv = new ModelAndView("success", m);
 		return mv;
