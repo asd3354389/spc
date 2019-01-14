@@ -6,7 +6,9 @@
     http://www.springframework.org/schema/beans 
     http://www.springframework.org/schema/beans/spring-beans-4.2.xsd">
 	<http auto-config="true">
-		<intercept-url pattern="/test**" access="hasRole('ROLE_ADMIN')" />
+		<!-- <intercept-url pattern="/test**" access="hasRole('ROLE_ADMIN')" />  -->
+		
+		<headers><frame-options disabled="true"/></headers>
 
 		<!--会话管理 -->
 		<session-management>
@@ -18,10 +20,10 @@
 		<!-- 尝试访问没有权限的页面时跳转的页面 -->		 	 
 		<access-denied-handler error-page="/403" />
 		
-		<form-login login-page="/Login" username-parameter="username"
+		 <form-login login-page="/Login" username-parameter="username"
 			password-parameter="password" login-processing-url="/login"
-			default-target-url="/admin" authentication-failure-url="/Login?error" />
-		<logout logout-success-url="/Login?logout" />
+			default-target-url="/index" authentication-failure-url="/Login?error" />
+		<logout logout-success-url="/Login?logout" /> 
 
 		<!-- enable csrf protection -->
 		<csrf disabled="true" /> <!--csrf保护功能禁用 -->

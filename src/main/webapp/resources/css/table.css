@@ -1,0 +1,25 @@
+body{
+    background: -webkit-linear-gradient(#FFEDD2, white) no-repeat; /* Safari 5.1 - 6.0 */
+ 	background: -o-linear-gradient(#FFEDD2, white) no-repeat; /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#FFEDD2, white) no-repeat; /* Firefox 3.6 - 15 */
+    background: linear-gradient(#FFEDD2 , white) no-repeat; /* 标准的语法 */
+    height:100vh;
+}
+td{
+	background-color:white;
+}
+.table td{
+	font-size:10px;
+}
+.table-condensed td:nth-child(odd){
+	background-color:#e8e8e8;
+}
+.table-condensed td:nth-child(even){
+	background-color:white;
+}
+.table td:first-child{
+	background-color:#e8e8e8;
+}
+.table td.td-top{
+	background-color:rgb(196,226,216);
+}
