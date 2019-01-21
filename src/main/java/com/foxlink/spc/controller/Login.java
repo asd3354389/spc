@@ -52,7 +52,7 @@ public class Login {
 	
 	@RequestMapping(value="/index",method=RequestMethod.GET)
 	public ModelAndView ShowIndesx(HttpSession session){
-		System.out.println("登陆成功");
+		System.out.println("登陆成功,陈洋究极帅！");
 		SecurityContextImpl securityContext = (SecurityContextImpl) session.getAttribute("SPRING_SECURITY_CONTEXT");
 		String username =  ((UserDetails)securityContext.getAuthentication().getPrincipal()).getUsername();
 		Map<String, String> m = new HashMap<>();
