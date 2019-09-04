@@ -8,9 +8,12 @@
 	<link rel="stylesheet" type="text/css" href="../resources/bootstrap-3.3.7-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../resources/css/SubPage.css">
 	<script type="text/javascript" src="../resources/jq/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="../resources/JS/AjaxCheckSession.js"></script>
+	<script type="text/javascript" src="../resources/JS/operate/OPTestFileSelect.js"></script>
 </head>
 <body>
-	<form class="form-horizontal" action="" method="get" role="form">
+	<div class="top">
+	<form class="form-horizontal" id="form1" enctype="multipart/form-data" method="post">
 		<div class="form-box">
 				<h3><span class="span-left">OPTest規格書搜尋</span></h3>
 		</div>
@@ -18,10 +21,13 @@
 			<label for="project-bd"  class="col-sm-1 control-label">專案名稱_版次:
 			</label>
 			<div class="file-main">
-				<input id="project-bd" class="form-control" type="text">
+				<input id="project-bd" name="project-bd" class="form-control" type="text">
 			</div>	
-			<button type="submit" class="btn btn-primary file-only">搜尋</button>	
+			<button type="button" class="btn btn-primary file-only" id="Submit_Select">搜尋</button>	
 		</div>
 	</form>
+	</div>
+	<div class="bottom">
+	</div>
 </body>
 </html>

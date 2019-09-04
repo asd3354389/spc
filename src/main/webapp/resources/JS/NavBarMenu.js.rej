@@ -1,0 +1,10 @@
+diff a/src/main/webapp/resources/JS/NavBarMenu.js b/src/main/webapp/resources/JS/NavBarMenu.js	(rejected hunks)
+@@ -128,7 +128,7 @@
+ 	},{
+ 		"menuid":"15",
+ 		"controll":"",
+-		"rel":"",
++		"rel":"/MeasureData/ShowMeasureData",
+ 		"menuname":"量測數據搜尋",
+ 		"icon":"glyphicon-hourglass",
+ 		"menus_s":[{

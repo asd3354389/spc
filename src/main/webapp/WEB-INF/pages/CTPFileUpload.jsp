@@ -9,23 +9,33 @@
 	<link rel="stylesheet" type="text/css" href="../resources/css/SubPage.css">
 	<script type="text/javascript" src="../resources/jq/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="../resources/JS/GetFile.js"></script>
+	<script type="text/javascript" src="../resources/JS/AjaxCheckSession.js"></script>
+	<script type="text/javascript" src="../resources/JS/operate/SPCTPFileUpload.js"></script>
 </head>
 <body>
-	<form class="form-horizontal" action="" method="get" role="form">
-		<div class="form-box">
-				<h3><span class="span-left">CTP規格書上傳</span></h3>
-		</div>
-		<div class="form-box">
-			<label for="CTP-FileUp"  class="col-sm-1 control-label">檔案名稱:
-			</label>
-			<div class="file-main">
-				<input id="lefile" type="file" style="display:none">
-				<input id="CTP-FileUp" class="form-control file-text" type="text">
-				<a class="btn btn-primary" onclick="$('input[id=lefile]').click();">選擇文件</a>
-			</div>	
-			<button type="submit" class="btn btn-primary file-only">上傳</button>	
-		</div>
-	</form>
+	<div class="top">
+	
+		<form class="form-horizontal" id="form1" enctype="multipart/form-data" method="post">
+			<div class="form-box">
+					<h3><span class="span-left">CTP規格書上傳</span></h3>
+			</div>
+			<div class="form-box">
+				<label for="CTP-FileUp"  class="col-sm-1 control-label">檔案名稱:
+				</label>
+				<div class="file-main">
+					<input id="lefile" name="file" type="file" style="display:none" accept=".xls,.xlsx">
+					<input id="CTP-FileUp" class="form-control file-text" type="text" readonly>
+					<a class="btn btn-primary" onclick="$('input[id=lefile]').click();">選擇文件</a>
+				</div>	
 
+				<button type="button" class="btn btn-primary file-only" id="Submit_CTPUpload">上傳</button>	
+
+				
+
+			</div>
+		</form>
+	</div>
+	<div class="bottom" style="overflow: auto;">
+	</div>
 </body>
 </html>

@@ -101,3 +101,30 @@
     		right: 105px;	
 			width:180px;
 		}
+		.ckbox{
+			position: relative;
+    		top: -5px;
+    		left:0px;
+    		/*background-color: red;*/
+    		width:100%;
+		}
+		#check{
+		    position: relative;
+		    left:-135px;
+		    margin-left:10px;
+		    padding-left: 100px;
+		}
+		#remember{
+		 
+		    position: relative;
+		    left:-130px;
+		    top:-2px;
+		
+		}
+		#forgetPassword{
+		 position: relative;
+		    left:125px;
+		
+		}
+		
+		

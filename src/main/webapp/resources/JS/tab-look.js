@@ -30,8 +30,8 @@ $(document).ready(function(){
 })
 	// 
 function createIframe(url){
-	var s = '<iframe scrolling="no" frameborder="0"  src="' + url
-			+ '" style="width:100%;height:100%;overflow:hidden;"></iframe>';
+	var s = '<iframe scrolling="auto" frameborder="0"  src="' + url
+			+ '" style="width:100%;height:100%;overflow:auto;"></iframe>';
 	return s;
 }
 function addTab(subtitle, url) {
