@@ -592,7 +592,7 @@ public class LkTrendChart {
 		//XSSFWorkbook wb = (XSSFWorkbook) WorkbookFactory.create(in);
 		OutputStream output = response.getOutputStream();
 
-		if(varData.equals("all")) {
+		if(varData.equals("ALL")) {
 		 strSQL = "select DISTINCT \r\n" + 
 				"       part_no,\r\n" + 
 				"       mold_no,\r\n" + 
